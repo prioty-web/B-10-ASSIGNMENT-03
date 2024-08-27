@@ -16,15 +16,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <script>
+      tailwind.config={
+        fontFamily:{
+          Manrope:"Manrope"
+        }
+      }
+    </script>
 </head>
    <style>
     
-.manrope-font{
-  font-family: "Manrope", system-ui;
-  font-optical-sizing: auto;
-  font-style: normal;}
+
    </style>
-<body class="font-manrope-font " >
+<body class="font-Manrope " >
     
       <header class="bg-gradient-to-b from-gray-100 to-white">
     <!-- navbar starts from here -->
@@ -510,12 +514,14 @@
 
 
               <!-- input section -->
-               <div class="grid grid-cols-1 lg:grid-cols-2 m-auto w-11/12 lg:w-2/4 gap-7  my-16">
-                <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs  rounded-full" />
-                <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs rounded-full" />
-                <input type="number" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs rounded-full" />
-                <input type="email" placeholder="E-mail Number*" class="input input-bordered w-full max-w-xs rounded-full" />
-                <textarea class="textarea textarea-bordered rounded-3xl w-[90%] lg:w-[200%]" placeholder="Write your text here..."></textarea>
+               <div class="grid grid-cols-2 m-auto w-11/12 lg:w-2/4 gap-5 
+                my-16">
+                <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs  rounded-full col-span-2 md:col-span-1" /> 
+                <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs rounded-full col-span-2 md:col-span-1" />
+                <input type="number" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs rounded-full col-span-2 md:col-span-1" />
+                <input type="email" placeholder="E-mail Number*" class="input input-bordered  w-full max-w-xs rounded-full col-span-2 md:col-span-1" />
+                <textarea rows="6"  class="textarea textarea-bordered rounded-3xl col-span-2 w-full " placeholder="Write your text here..."></textarea>
+                <!-- <textarea rows="8" class="w-full mt-3 p-4 border-none outline-none rounded-3xl " placeholder="Write your text here..."></textarea> -->
                 <!-- <input type="text" placeholder="Write your text here..." class="input input-bordered  h-40 rounded-3xl max-w-screen-lg lg:w-[200%]" /> -->
                </div>
                <div class="text-center space-y-5 ">
